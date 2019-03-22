@@ -27,7 +27,7 @@ function viewCart(){
 function total(){
   var acc = 0
   for (var i = 0; i < cart.length; i++){
-      acc = acc + parseInt(cart[i].itemPrice)
+      acc = acc + parseFloat(cart[i].itemPrice)
     }
   return acc
 }
