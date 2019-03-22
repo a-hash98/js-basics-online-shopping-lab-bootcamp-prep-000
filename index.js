@@ -11,9 +11,9 @@ function viewCart(){
   if (cart.length == 0){
     return "Your shopping cart is empty."
   } else {
-    cart_format = []
+    var cart_format = []
     for (var i = 0; i < cart.length; i++){
-      cart_format.push(` ${cart[i].values()[0]} at $${cart[i].values()[1]}`)
+      cart_format.push(` ${cart[i].item.itemName} at $${cart[i].item.itemPrice}`)
     }
     cart_format[cart_format.length-1] = `and ${cart_format[cart_format.length-1]}`
     return `In your cart, you have ${cart_format.join('')}`
