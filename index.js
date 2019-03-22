@@ -46,7 +46,7 @@ function removeFromCart(item){
     if (cart[i].itemName == item){
       delete item.itemName
       delete item.itemPrice
-      
+
   } else {
     return "That item is not in your cart."
   }
