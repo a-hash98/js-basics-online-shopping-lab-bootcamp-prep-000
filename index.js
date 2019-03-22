@@ -13,12 +13,12 @@ function viewCart(){
   } else {
     var cart_format = []
     for (var i = 0; i < cart.length; i++){
-      cart_format.push(`${cart[i].itemName} at $${cart[i].itemPrice} `)
+      cart_format.push(` ${cart[i].itemName} at $${cart[i].itemPrice}`)
     }
     if (cart.length > 1){
       cart_format[cart_format.length-1] = `and ${cart_format[cart_format.length-1]}`
     }
-    return `In your cart, you have ${cart_format.join(',').trim()}.`
+    return `In your cart, you have${cart_format.join(',').trim()}.`
 
   }
   }
