@@ -42,8 +42,9 @@ function setCart(c) {
 }
 
 function removeFromCart(item){
-  if (cart.includes(item.itemName)){
-    delete cart.item
+  if (cart.keys().includes(item.itemName)){
+    delete item.itemName
+    delete item.itemPrice
   } else {
     return "That item is not in your cart."
   }
