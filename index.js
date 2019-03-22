@@ -4,7 +4,7 @@ function addToCart(item) {
   var price = Math.random()*100
   item = {itemName : item, itemPrice: price}
   cart.push(item)
-  return `${item.values()[0]} has been added to your cart.`
+  return `${item.fromkeys()} has been added to your cart.`
 }
 
 function viewCart(){
