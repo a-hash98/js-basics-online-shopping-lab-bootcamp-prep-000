@@ -46,7 +46,7 @@ function removeFromCart(item){
   for (var i = 0; i < cart.length; i++){
     if (cart[i].itemName == item){
       console.log("yes")
-      delete cart[i]
+      cart[i].Remove(itemName)
       console.log(cart)
     }
 
