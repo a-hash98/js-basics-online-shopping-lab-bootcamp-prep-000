@@ -46,12 +46,14 @@ function removeFromCart(item){
   for (var i = 0; i < cart.length; i++){
     if (cart[i].itemName == item){
       console.log("yes")
+      delete cart[i]
+      console.log(cart)
     }
 
   }
 }
 
-cart = [{itemName: "cat", itemPrice: "$20"}]
+cart = [{itemName: "cat", itemPrice: "$20"}, {{itemName: "frog", itemPrice: "$20"}]
 removeFromCart("cat")
 
 function placeOrder(cardNumber) {
