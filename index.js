@@ -42,12 +42,11 @@ function setCart(c) {
 }
 
 function removeFromCart(item){
-  var itemName = item
-  if (cart.itemName){
-    console.log("yes")
-    return "yes"
-    delete item.itemName
-    delete item.itemPrice
+  for (var i = 0; i < cart.length; i++){
+    if (cart[i].itemName == item){
+      delete item.itemName
+      delete item.itemPrice
+      break
   } else {
     return "That item is not in your cart."
   }
