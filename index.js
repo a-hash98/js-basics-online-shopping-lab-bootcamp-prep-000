@@ -45,16 +45,14 @@ function removeFromCart(item){
   var j = 0
   for (var i = 0; i < cart.length; i++){
     if (cart[i].itemName == item){
-      console.log("yes")
-      cart[i].Remove(itemName)
-      console.log(cart)
+      delete cart[i]
+      
     }
 
   }
 }
 
-cart = [{itemName: "cat", itemPrice: "$20"}, {itemName: "frog", itemPrice: "$20"}]
-removeFromCart("cat")
+
 
 function placeOrder(cardNumber) {
   var t = total()
