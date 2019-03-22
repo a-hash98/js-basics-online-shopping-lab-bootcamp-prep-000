@@ -42,7 +42,7 @@ function setCart(c) {
 }
 
 function removeFromCart(item){
-  if cart.includes(item.itemName){
+  if (cart.includes(item.itemName)){
     return "yes"
   }
 
