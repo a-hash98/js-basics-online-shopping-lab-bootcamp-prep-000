@@ -42,7 +42,7 @@ function setCart(c) {
 }
 
 function removeFromCart(item){
-  if (cart.keys().includes(item.itemName)){
+  if (cart.includes(item.itemName)){
     delete item.itemName
     delete item.itemPrice
   } else {
