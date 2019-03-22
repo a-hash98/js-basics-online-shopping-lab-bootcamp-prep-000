@@ -53,7 +53,7 @@ function removeFromCart(item){
   }
 }
 
-cart = [{itemName: "cat", itemPrice: "$20"}, {{itemName: "frog", itemPrice: "$20"}]
+cart = [{itemName: "cat", itemPrice: "$20"}, {itemName: "frog", itemPrice: "$20"}]
 removeFromCart("cat")
 
 function placeOrder(cardNumber) {
