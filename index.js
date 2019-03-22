@@ -42,7 +42,10 @@ function setCart(c) {
 }
 
 function removeFromCart(item){
-  // write your code here
+  if cart.includes(item.itemName){
+    return "yes"
+  }
+  
 }
 
 function placeOrder(cardNumber) {
