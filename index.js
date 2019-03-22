@@ -23,8 +23,8 @@ function viewCart(){
   }
 }
 
-var acc = 0
 function total(){
+  var acc = 0
   for (var i = 0; i < cart.length; i++){
       acc = acc + parseFloat(cart[i].itemPrice)
   }
@@ -41,13 +41,27 @@ function setCart(c) {
   return cart;
 }
 
+function removeFromCart(item){
+  var j = 0
+  for (var i = 0; i < cart.length; i++){
+    if (cart[i].itemName == item){
+      delete cart[i].itemName
+      j = j+2
+    }
+  }
+
+  if (j==0){
+    return "That item is not in your cart."
+  }
+}
 
 
 function placeOrder(cardNumber) {
+  var t = total()
   if (!cardNumber){
     return "Sorry, we don't have a credit card on file for you."
   } else {
     cart = []
-    return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
+    return `Your total cost is $${t}, which will be charged to the card ${cardNumber}.`
   }
 }
