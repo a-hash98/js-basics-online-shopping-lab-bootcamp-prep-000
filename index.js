@@ -18,7 +18,7 @@ function viewCart(){
     if (cart.length > 1){
       cart_format[cart_format.length-1] = `and ${cart_format[cart_format.length-1]}`
     }
-    return `In your cart, you have ${cart_format.trim()}.`
+    return `In your cart, you have ${cart_format.joing(',').trim()}.`
 
   }
   }
