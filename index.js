@@ -43,7 +43,9 @@ function setCart(c) {
 
 function removeFromCart(item){
   if (cart.includes(item.itemName)){
-    return "yes"
+    delete cart.item
+  } else {
+    return "That item is not in your cart."
   }
 
 }
