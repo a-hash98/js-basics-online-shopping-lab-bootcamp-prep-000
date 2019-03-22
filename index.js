@@ -27,10 +27,8 @@ function viewCart(){
 function total(){
   var acc = 0
   for (var i = 0; i < cart.length; i++){
-    if (i%2==0){
       acc = acc + parseInt(cart[i].itemPrice)
     }
-  }
   return acc
 }
 
