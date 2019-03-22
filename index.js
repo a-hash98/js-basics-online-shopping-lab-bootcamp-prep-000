@@ -45,7 +45,7 @@ function removeFromCart(item){
   if cart.includes(item.itemName){
     return "yes"
   }
-  
+
 }
 
 function placeOrder(cardNumber) {
