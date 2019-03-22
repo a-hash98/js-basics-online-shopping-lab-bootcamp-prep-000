@@ -50,6 +50,7 @@ function removeFromCart(item){
       j = j+2
     }
   }
+
   if (j==0){
     return "That item is not in your cart."
   }
