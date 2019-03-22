@@ -23,14 +23,15 @@ function viewCart(){
   }
   }
 
+var acc = 0
 
 function total(){
-  var acc = 0
   for (var i = 0; i < cart.length; i++){
       acc = acc + parseFloat(cart[i].itemPrice)
-    }
+  }
   return acc
 }
+
 
 function getCart() {
  return cart;
