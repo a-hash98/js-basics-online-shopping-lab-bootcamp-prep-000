@@ -42,7 +42,7 @@ function setCart(c) {
 }
 
 function removeFromCart(item){
-  if (cart.includes(item.itemName)){
+  if (item.itemName) != undefined {
     console.log("yes")
     return "yes"
     delete item.itemName
