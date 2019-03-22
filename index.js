@@ -46,7 +46,6 @@ function removeFromCart(item){
   for (var i = 0; i < cart.length; i++){
     if (cart[i].itemName == item){
       delete cart[i].itemName
-      delete cart[i].itemPrice
       j = j+2
     }
   }
