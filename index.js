@@ -45,8 +45,8 @@ function removeFromCart(item){
   var j = 0
   for (var i = 0; i < cart.length; i++){
     if (cart[i].itemName == item){
-      item.Remove(itemName)
-      item.Remove(itemPrice)
+      cart[i].Remove(itemName)
+      cart[i].Remove(itemPrice)
       j = j+2
     }
   }
