@@ -47,7 +47,7 @@ function removeFromCart(item){
     if (cart[i].itemName == item){
       console.log("yes")
     }
-    
+
   }
 }
 
