@@ -41,19 +41,6 @@ function setCart(c) {
   return cart;
 }
 
-function removeFromCart(item){
-  var j = 0
-  for (var i = 0; i < cart.length; i++){
-    if (cart[i].itemName == item){
-      delete cart[i].itemName
-      j = j+2
-    }
-  }
-
-  if (j==0){
-    return "That item is not in your cart."
-  }
-}
 
 
 function placeOrder(cardNumber) {
