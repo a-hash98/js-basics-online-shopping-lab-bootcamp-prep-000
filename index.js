@@ -21,7 +21,7 @@ function viewCart(){
     return `In your cart, you have ${cart_format.join(',').trim()}.`
 
   }
-  }
+}
 
 var acc = 0
 function total(){
@@ -42,14 +42,16 @@ function setCart(c) {
 }
 
 function removeFromCart(item){
+  var j = 0
   for (var i = 0; i < cart.length; i++){
     if (cart[i].itemName == item){
       delete item.itemName
       delete item.itemPrice
+      j = j+2
     }
-
-  } else {
-  return "That item is not in your cart."
+  }
+  if (j==0){
+    return "That item is not in your cart."
   }
 }
 
