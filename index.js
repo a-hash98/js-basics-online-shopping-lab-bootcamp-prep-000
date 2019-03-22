@@ -10,7 +10,7 @@ function addToCart(item) {
 function viewCart(){
   if (cart.length == 0){
     return "Your shopping cart is empty."
-  else {
+  } else {
     cart_format = []
     for (var i = 0; i < cart.length; i++){
       cart_format.push(` ${cart[i].values()[0]} at $${cart[i].values()[1]}`)
@@ -20,7 +20,7 @@ function viewCart(){
 
   }
   }
-}
+
 
 function total(){
   var acc = 0
@@ -32,11 +32,6 @@ function total(){
   return acc
 }
 
-
-
-
-
-
 function getCart() {
  return cart;
 }
@@ -46,25 +41,7 @@ function setCart(c) {
   return cart;
 }
 
-
-
- return itemName
-
-}
-
-function viewCart() {
-  // write your code here
-}
-
-function total() {
-  // write your code here
-}
-
-function removeFromCart(item) {
-  if cart.includes(item){
-    var index = cart.indexOf(item)
-    cart.splice(0,)
-  }
+function removeFromCart(item){
   // write your code here
 }
 
