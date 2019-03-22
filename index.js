@@ -44,11 +44,15 @@ function setCart(c) {
 function removeFromCart(item){
   var j = 0
   for (var i = 0; i < cart.length; i++){
-    console.log(cart[i].itemName == item)
+    if (cart[i].itemName == item){
+      console.log("yes")
+    }
+    
   }
 }
 
-
+cart = [{itemName: "cat", itemPrice: "$20"}]
+removeFromCart("cat")
 function placeOrder(cardNumber) {
   var t = total()
   if (!cardNumber){
