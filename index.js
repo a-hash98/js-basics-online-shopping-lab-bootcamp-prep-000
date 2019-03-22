@@ -53,6 +53,7 @@ function removeFromCart(item){
 
 cart = [{itemName: "cat", itemPrice: "$20"}]
 removeFromCart("cat")
+
 function placeOrder(cardNumber) {
   var t = total()
   if (!cardNumber){
