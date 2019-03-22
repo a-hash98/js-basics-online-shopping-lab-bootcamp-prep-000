@@ -43,7 +43,7 @@ function setCart(c) {
 
 function removeFromCart(item){
   itemName = item
-  if (item.itemName) != undefined {
+  if (cart.itemName){
     console.log("yes")
     return "yes"
     delete item.itemName
