@@ -52,9 +52,9 @@ function removeFromCart(item){
   }
   if (j==0){
     return "That item is not in your cart."
-    
+
   }
- 
+
 }
 
 
