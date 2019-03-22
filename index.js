@@ -42,7 +42,7 @@ function setCart(c) {
 }
 
 function removeFromCart(item){
-  itemName = item
+  var itemName = item
   if (cart.itemName){
     console.log("yes")
     return "yes"
